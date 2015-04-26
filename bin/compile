@@ -20,4 +20,6 @@ echo "exporting PATH and LIBRARY_PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/ffmpeg.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$PATH:vendor/ffmpeg/bin"' >> $PROFILE_PATH
-echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/ffmpeg/lib:vendor/faac/lib:vendor/libass/lib:vendor/libfreetype/lib:vendor/libmp3lame/lib:vendor/libogg/lib:vendor/libtheora/lib:vendor/libva/lib:vendor/libvorbis/lib:vendor/libvpx/lib:vendor/libx264/lib:vendor/libx265/lib:vendor/opus/lib:vendor/yasm/lib"' >> $PROFILE_PATH
+echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/app/vendor/ffmpeg/lib:/app/vendor/faac/lib:/app/vendor/libass/lib:/app/vendor/libfreetype/lib:/app/vendor/libmp3lame/lib:/app/vendor/libSDL/lib:/app/vendor/libogg/lib:/app/vendor/libtheora/lib:/app/vendor/libva/lib:/app/vendor/libvdpau/lib:/app/vendor/enca/lib:/app/vendor/fribidi/lib:/app/vendor/libvorbis/lib:/app/vendor/libxcb/lib:/app/vendor/libvpx/lib:/app/vendor/libx264/lib:/app/vendor/libx265/lib:/app/vendor/opus/lib:/app/vendor/yasm/lib"' >> $PROFILE_PATH
+
+
